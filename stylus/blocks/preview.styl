@@ -1,0 +1,78 @@
+.preview
+  display flex
+  align-items flex-start
+  
+  +below(360px)
+    flex-direction column
+  
+  &__thumb
+    position relative
+    
+    display block
+    
+    flex 0 0 140px
+    size(140px, 100px)
+    margin-right 20px
+    overflow hidden
+    
+    +below(360px)
+      display none
+    
+    &:hover, &.active
+      .preview__meta
+        opacity 1
+
+  &__img
+    display block
+    size(140px, 100px)
+    
+    background-size cover
+    background-position center
+  
+
+  &__meta
+    position absolute
+    opacity 0
+    
+    top 0
+    left 0
+    right 0
+    bottom 0
+    
+    padding 12px 9px
+    
+    color #fff
+    
+    background rgba(0, 0, 0, .8)
+    transition opacity .2s ease
+    
+    .stat
+      margin-bottom 8px
+  
+  
+  &__published
+    margin-bottom 6px
+    
+    font-size 11px
+    font-weight bold
+  
+
+  &__title
+    margin-bottom 6px
+    
+    font-size 16px
+    font-family "Open Sans"
+    font-weight 400
+    
+    a     
+      color $accent-color
+      text-decoration underline
+      
+      &:hover, &.active
+        text-decoration none
+  
+
+  &__description
+    font-size 13px
+    
+    color #707070

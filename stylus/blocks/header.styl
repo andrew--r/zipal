@@ -1,0 +1,105 @@
+.header  
+  border-bottom 1px solid #e5e5e5
+  height $header-height
+  
+
+  &__inner
+    container($site-width)
+    height 100%
+    
+    display flex
+    align-items center
+    justify-content space-between
+    
+    +below($desktop-cutoff)
+      padding 0 20px
+
+  &__left,
+  &__right
+    height 100%
+    
+    display flex
+    align-items center
+  
+
+  &__search
+    margin-left 60px
+  
+
+  &__expand
+    display none
+    
+    size(24px, 20px)
+
+    margin-right 10px
+    box-sizing content-box
+    
+    background transparent
+    border 0
+    outline 0
+    
+    +below($mobile-cutoff)
+      display block
+    
+    span
+      position relative
+        
+      display block
+      size(24px, 4px)
+      
+      margin 0 auto
+      
+      transition all 0.2s linear
+      background #1091e3
+      border-radius 3px
+      box-sizing content-box
+      
+      &:before
+        content ''
+          
+        position absolute
+        left 0
+        bottom -8px
+        
+        display block
+        size(24px, 4px)
+        border-radius 3px
+        background #1091e3
+        transition all 0.2s linear
+        
+        box-sizing content-box
+        transform rotate(0)
+        
+      &:after
+        content ''
+          
+        position absolute
+        left 0
+        top -8px
+        
+        display block
+        size(24px, 4px)
+        
+        border-radius 3px
+        background #1091e3
+        transition all 0.2s linear
+        
+        box-sizing content-box
+        transform rotate(0)
+        
+    
+    &--active
+      span
+        size(4px)
+        
+        &:before
+          left -11px
+          bottom 0
+          
+          transform rotate(-135deg)
+          
+        &:after
+          left -11px
+          top 0
+          
+          transform rotate(135deg)

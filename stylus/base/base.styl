@@ -1,0 +1,56 @@
+html, body
+  position relative
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  
+  height 100%
+  
+  font-size 16px
+  line-height 1.4
+  font-family 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  
+  color #222
+ 
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote
+  margin 0
+  padding 0
+
+
+h1, h2, h3, h4, h5, h6
+  font-family 'Open Sans'
+
+
+a
+  text-decoration underline
+
+  color $accent-color
+  
+  &:hover
+    text-decoration none
+
+
+// helper classes
+.wrapper
+  min-height 100%
+  padding-bottom $footer-height + 60px
+
+
+.hidden-d
+  +above($desktop-cutoff)
+    display none !important
+
+
+.hidden-t
+  +between($mobile-cutoff, $desktop-cutoff)
+    display none !important
+
+
+.hidden-m
+  +below($mobile-cutoff)
+    display none !important
+
+
+.hidden-tm
+  +below($desktop-cutoff)
+    display none !important

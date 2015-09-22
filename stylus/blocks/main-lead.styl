@@ -1,0 +1,57 @@
+.main-lead
+  padding 40px 0 20px
+  
+  background #f5f5f5
+  
+  &--category
+    background #fff
+    padding-bottom 0
+  
+
+  &__inner
+    container($site-width)
+    
+    +below($desktop-cutoff)
+      padding 0 20px
+  
+
+  &__grid
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    
+
+  &__item
+    flex 1 0 49%
+    width 49%
+    margin-bottom 36px
+    
+    +below(860px)
+      width 100%
+      flex 1 0 100%
+      container(530px) 
+      margin-left auto !important
+    
+    &:not(:nth-child(2n-1))
+      margin-left 2%
+  
+
+  &__btn
+    display block
+    height 60px
+    
+    font-size 16px
+    line-height 60px
+    font-weight bold
+    text-align center
+    text-decoration none
+    text-transform uppercase
+    
+    background #f5f5f5
+    border-radius 4px
+    border 1px solid #d3d3d3
+    transition all .2s ease
+    
+    &:hover
+      background darken(#f5f5f5, 5%)
+      border-color darken(#d3d3d3, 5%)

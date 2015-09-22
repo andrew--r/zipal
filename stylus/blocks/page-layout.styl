@@ -1,0 +1,100 @@
+.page-layout
+  padding-top 40px
+  padding-bottom 40px
+  
+  display flex
+  justify-content space-between 
+  
+  container($site-width)
+  
+  +below($site-width)
+    padding 20px
+  
+
+  &__main
+    flex 1 0 73%
+    max-width 73%
+    
+    +below($site-width)
+      flex 1 0 100%
+      container(700px)
+  
+
+  &__sidebar
+    flex 1 0 23%
+    max-width 23%
+    
+    +below($site-width)
+      display none
+  
+
+  &__title
+    margin-bottom 12px
+
+    font-size 31px
+    
+    +below($mobile-cutoff)
+      font-size 26px
+  
+
+  &__meta
+    display flex
+    align-items center
+    
+    color #707070
+    
+    .stat:not(:last-child)
+      margin-right 20px
+  
+
+  &__published
+    margin-right 20px
+    
+    font-size 13px
+    font-weight bold
+  
+
+  &__thumb
+    margin-top 12px
+    margin-bottom 26px
+    
+    size(100%, 300px)
+    
+    background-size cover
+    background-position center
+    
+    +below(640px)
+      height 200px
+  
+
+  &__intro
+    margin-bottom 32px
+    
+    font-weight bold
+    font-size 15px
+  
+
+  &__content
+    font-size 17px
+    
+    p, blockquote, img, iframe
+      margin 26px 0
+    
+    blockquote
+      border-top 1px solid #e5e5e5
+      border-bottom 1px solid #e5e5e5
+      
+      padding 16px 0
+      font-weight bold
+      
+      font-size .8em
+      text-align center  
+    
+    img
+      display block
+      margin-left auto
+      margin-right auto
+      
+      padding .7rem
+      
+      border 1px solid #e5e5e5

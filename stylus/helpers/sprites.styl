@@ -1,0 +1,147 @@
+/*
+Stylus variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon_home_width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon_home = x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet = width height image $spritesheet_sprites;
+*/
+$sprite_close_name = 'sprite-close';
+$sprite_close_x = 85px;
+$sprite_close_y = 45px;
+$sprite_close_offset_x = -85px;
+$sprite_close_offset_y = -45px;
+$sprite_close_width = 18px;
+$sprite_close_height = 18px;
+$sprite_close_total_width = 392px;
+$sprite_close_total_height = 126px;
+$sprite_close_image = '../images/sprites.png';
+$sprite_close = 85px 45px -85px -45px 18px 18px 392px 126px '../images/sprites.png' 'sprite-close';
+$sprite_down_name = 'sprite-down';
+$sprite_down_x = 0px;
+$sprite_down_y = 45px;
+$sprite_down_offset_x = 0px;
+$sprite_down_offset_y = -45px;
+$sprite_down_width = 50px;
+$sprite_down_height = 23px;
+$sprite_down_total_width = 392px;
+$sprite_down_total_height = 126px;
+$sprite_down_image = '../images/sprites.png';
+$sprite_down = 0px 45px 0px -45px 50px 23px 392px 126px '../images/sprites.png' 'sprite-down';
+$sprite_duration_name = 'sprite-duration';
+$sprite_duration_x = 58px;
+$sprite_duration_y = 45px;
+$sprite_duration_offset_x = -58px;
+$sprite_duration_offset_y = -45px;
+$sprite_duration_width = 19px;
+$sprite_duration_height = 19px;
+$sprite_duration_total_width = 392px;
+$sprite_duration_total_height = 126px;
+$sprite_duration_image = '../images/sprites.png';
+$sprite_duration = 58px 45px -58px -45px 19px 19px 392px 126px '../images/sprites.png' 'sprite-duration';
+$sprite_logo_name = 'sprite-logo';
+$sprite_logo_x = 0px;
+$sprite_logo_y = 0px;
+$sprite_logo_offset_x = 0px;
+$sprite_logo_offset_y = 0px;
+$sprite_logo_width = 392px;
+$sprite_logo_height = 37px;
+$sprite_logo_total_width = 392px;
+$sprite_logo_total_height = 126px;
+$sprite_logo_image = '../images/sprites.png';
+$sprite_logo = 0px 0px 0px 0px 392px 37px 392px 126px '../images/sprites.png' 'sprite-logo';
+$sprite_next_name = 'sprite-next';
+$sprite_next_x = 0px;
+$sprite_next_y = 76px;
+$sprite_next_offset_x = 0px;
+$sprite_next_offset_y = -76px;
+$sprite_next_width = 23px;
+$sprite_next_height = 50px;
+$sprite_next_total_width = 392px;
+$sprite_next_total_height = 126px;
+$sprite_next_image = '../images/sprites.png';
+$sprite_next = 0px 76px 0px -76px 23px 50px 392px 126px '../images/sprites.png' 'sprite-next';
+$sprite_prev_name = 'sprite-prev';
+$sprite_prev_x = 31px;
+$sprite_prev_y = 76px;
+$sprite_prev_offset_x = -31px;
+$sprite_prev_offset_y = -76px;
+$sprite_prev_width = 23px;
+$sprite_prev_height = 50px;
+$sprite_prev_total_width = 392px;
+$sprite_prev_total_height = 126px;
+$sprite_prev_image = '../images/sprites.png';
+$sprite_prev = 31px 76px -31px -76px 23px 50px 392px 126px '../images/sprites.png' 'sprite-prev';
+$sprite_price_name = 'sprite-price';
+$sprite_price_x = 111px;
+$sprite_price_y = 45px;
+$sprite_price_offset_x = -111px;
+$sprite_price_offset_y = -45px;
+$sprite_price_width = 12px;
+$sprite_price_height = 15px;
+$sprite_price_total_width = 392px;
+$sprite_price_total_height = 126px;
+$sprite_price_image = '../images/sprites.png';
+$sprite_price = 111px 45px -111px -45px 12px 15px 392px 126px '../images/sprites.png' 'sprite-price';
+$spritesheet_width = 392px;
+$spritesheet_height = 126px;
+$spritesheet_image = '../images/sprites.png';
+$spritesheet_sprites = $sprite_close $sprite_down $sprite_duration $sprite_logo $sprite_next $sprite_prev $sprite_price;
+$spritesheet = 392px 126px '../images/sprites.png' $spritesheet_sprites;
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  spriteWidth($icon_home)
+}
+
+.icon-email {
+  sprite($icon_email)
+}
+*/
+spriteWidth($sprite) {
+  width: $sprite[4];
+}
+
+spriteHeight($sprite) {
+  height: $sprite[5];
+}
+
+spritePosition($sprite) {
+  background-position: $sprite[2] $sprite[3];
+}
+
+spriteImage($sprite) {
+  background-image: url($sprite[8]);
+}
+
+sprite($sprite) {
+  spriteImage($sprite)
+  spritePosition($sprite)
+  spriteWidth($sprite)
+  spriteHeight($sprite)
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of Stylus
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+sprites($spritesheet_sprites);
+*/
+sprites($sprites) {
+  for $sprite in $sprites {
+    $sprite_name = $sprite[9];
+    .{$sprite_name} {
+      sprite($sprite);
+    }
+  }
+}

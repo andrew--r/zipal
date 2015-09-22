@@ -1,0 +1,137 @@
+.posts
+  padding 40px 0
+  
+  +below(860px)
+    padding 20px 0
+  
+  &__inner
+    container($site-width)
+    position relative
+    
+    +below($desktop-cutoff)
+      padding 0 20px
+  
+
+  &__title
+    margin-bottom 40px
+    
+    font-family "Open Sans" 
+    font-weight bold
+    font-size 16px
+    line-height 1
+    text-transform uppercase
+    
+    +below(860px)
+      flex 1 0 100%
+      container(530px)
+      
+      margin-bottom 20px
+    
+    span
+      position relative
+      z-index 10
+      background #fff
+      display inline-block
+      padding-right 6px
+    
+    &:after
+      content ''
+      
+      position relative
+      top -4px
+      z-index 5
+      
+      display block
+      border-bottom 2px solid $accent-color
+  
+
+  &__container
+    display flex
+    justify-content space-between
+    
+    +below(860px)
+      flex-direction column
+      justify-content flex-start 
+    
+    .preview-medium
+      +below(860px)
+        margin-bottom 40px
+  
+
+  &__left
+    flex 1 0 38%
+    max-width 38%
+    
+    +below(860px)
+      flex 1 0 100%
+      container(530px)
+  
+
+  &__right
+    flex 1 0 56.5%
+    max-width 56.5%
+    
+    +below(860px)
+      flex 1 0 100%
+      container(530px)
+    
+    .preview
+      margin-bottom 24px
+  
+
+  &__slider
+    +below(860px)
+      container(530px)
+    
+    .slick-dots
+      clearlist()
+      margin-top 40px
+      
+      text-align center
+      
+      +below(860px)
+        display none !important
+      
+      .slick-active
+        button:after
+          background #f0af0f
+
+      button
+        hidetext()
+        display block
+        size(20px)
+        
+        position relative
+        
+        background transparent
+        border 0
+        outline 0
+        
+        &:after
+          content ''
+          
+          position absolute
+          left 5px
+          top 5px
+          
+          display block
+          size(10px)
+          
+          border-radius 10px
+          border 3px solid #f0af0f
+          transition all .16s ease
+          background transparent
+        
+        &:not(:first-child)
+          margin-left 10px
+          
+  
+
+  &__slide
+    width 235px
+    margin-left 20px
+    
+    outline 0
+
+    .preview-small
+      max-width 100%

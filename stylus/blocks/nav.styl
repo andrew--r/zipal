@@ -1,0 +1,77 @@
+.nav
+  position relative
+  
+  &--gray
+    background #f5f5f5
+  
+  border-bottom 1px solid #e5e5e5
+  
+  +below($mobile-cutoff)
+    display none
+  
+
+  &__inner
+    display flex
+    align-items stretch
+    justify-content center
+    
+    list-style none
+    
+    +below($mobile-cutoff)
+      flex-direction column
+      text-align center
+
+  &__item
+    position relative
+    bottom -1px
+    &--active
+      .nav__link
+        color $accent-color
+        border-bottom-color $accent-color
+    
+    +above($mobile-cutoff)
+      &:not(:first-child)
+        margin-left 6px
+    
+    +below($mobile-cutoff)
+      margin-top 10px
+      
+      &--active
+        .nav__link
+          color #fff
+          background $accent-color
+  
+
+  &__link
+    display block
+    padding 0 10px
+    max-height $header-height + 1px
+    
+    font-weight bold
+    line-height $header-height
+    text-decoration none
+    text-transform uppercase
+    
+    color #222
+    border-bottom 3px solid transparent
+    transition all .16s ease
+    
+    &:hover
+      color $accent-color
+      border-bottom-color $accent-color
+    
+    +below($desktop-cutoff)
+      font-size 14px
+    
+    +below(800px)
+      padding 5px
+      font-size 12px
+    
+    +below($mobile-cutoff)
+      font-size 18px
+      line-height 2
+
+      
+      &:hover
+        background $accent-color
+        color #fff

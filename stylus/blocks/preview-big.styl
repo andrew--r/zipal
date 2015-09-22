@@ -1,0 +1,66 @@
+.preview-big
+  display flex
+  align-items stretch
+  
+  margin-bottom 40px
+  
+  +below(860px)
+    flex-direction column
+    
+    container(530px)
+  
+
+  &__thumb
+    display block
+    
+    flex 1 0 53%
+    height 300px
+    margin-right 20px
+    
+    background-size cover
+    background-position center     
+    
+    +below(860px)
+      margin-bottom 12px
+      
+      width 100%
+  
+
+  &__content
+    display flex
+    flex-direction column
+    justify-content space-between
+
+
+  &__title
+    margin-bottom 12px
+    
+    font-size 31px
+    line-height 1.35
+    
+    +below($mobile-cutoff)
+      font-size 26px
+    
+    a 
+      color $accent-color
+      text-decoration underline
+      
+      &:hover, &.active
+        text-decoration none
+    
+  
+
+  &__description
+    font-size 15px
+    line-height 20px
+  
+
+  &__meta
+    display flex
+    align-items center
+    justify-content flex-start
+    
+    margin-top 20px
+    
+    .stat:not(:first-child)
+      margin-left 20px
