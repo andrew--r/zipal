@@ -1,6 +1,6 @@
 <div class="preview-small">
   <a href="#" class="preview-small__thumb">
-    <span class="preview-small__img" style="background-image: url(static/images/preview-small.jpg)"></span>
+    <span class="preview-small__img" style="background-image: url(static/images/placeholder.png)"></span>
 
     <span class="preview-small__meta">
       <div class="preview-small__description">Интернет — самый современный и, пожалуй, самый эффективный канал продаж недвижимости. Дать объявление о продаже квартиры в нем может каждый: это не требует специальных знаний, и это зачастую бесплатно.</div>

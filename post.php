@@ -83,21 +83,35 @@
     </p>
 
     <div class="page-layout__content">
-      <p>Авито — универсальная доска объявлений для разных типов товаров. Входит в десятку самых популярных рекламных сайтов и лучших работодателей. Сайт оснащен удобным поиском по категориям, понятным интерфейсом. Продавцу недвижимости позволяет подать объявление продаже квартиры, дома, земли с хорошим результатом.</p>
+      <img class="alignright" src="http://i35.tinypic.com/990wtx.png" alt="WordPress Logo" align="right" />Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur quam augue, vehicula quis, tincidunt vel, varius vitae, nulla. Sed convallis orci. Duis libero orci, pretium a, <a href="#">convallis quis</a>, pellentesque a, dolor. Curabitur vitae nisi non dolor vestibulum consequat. <!--more-->
+      <blockquote>Proin vestibulum. Ut ligula. Nullam sed dolor id odio volutpat pulvinar. Integer a leo. In et eros at neque pretium sagittis. Sed sodales lorem a ipsum suscipit gravida. Ut fringilla placerat arcu. Phasellus imperdiet. Mauris ac justo et turpis pharetra vulputate.</blockquote>
+      <cite><a href="#">Quote Source</a></cite>
+      <h1>Level 1 Heading</h1>
+      <h2>Level 2 Heading</h2>
+      <h3>Level 3 Heading</h3>
+      <h4>Level 4 Heading</h4>
+      <h5>Level 5 Heading</h5>
+      <h6>Level 6 Heading</h6>
+      <h3>An Unordered List</h3>
+      <ul>
+        <li>Vestibulum in mauris semper tortor interdum ultrices.</li>
+        <li>Sed vel lorem et justo laoreet bibendum. Donec dictum.</li>
+        <li>Etiam massa libero, lacinia at, commodo in, tincidunt a, purus.</li>
+        <li>Praesent volutpat eros quis enim blandit tincidunt.</li>
+        <li>Aenean eu libero nec lectus ultricies laoreet. Donec rutrum, nisi vel egestas ultrices, ipsum urna sagittis libero, vitae vestibulum dui dolor vel velit.</li>
+      </ul>
+      <h3>Image with no alignment</h3>
+      <img src="http://i35.tinypic.com/990wtx.png" alt="WordPress Logo" />
 
-      <p>К объявлениям Авито предъявляет ряд требований, в числе которых запрет на активные и пассивные ссылки в объявлениях на другие сайты. В связи с этим Авито не подходит тем продавцам, которые создают отдельные сайты для своих объектов продажи. Запрещено указывать в объявлениях информацию об услугах и товарах, которые предоставлены на интернет-аукционах и других сайтах, за ту же или за меньшую плату. На размещенных фото Авито ставит свои водяные знаки.</p>
-
-      <blockquote>При этом Авито сотрудничает с широкой сетью партнеров, и может размещать объявления на их сайтах по своему усмотрению. В частности, объявления о недвижимости могут дублироваться на новом сайте domofond.ru, который специализируется на недвижимости, и привлекать дополнительное число клиентов.</blockquote>
-
-      <p>ЦИАН — специализированный сервис, монстр рынка недвижимости в Москве и области. Благодаря большим базам данных, пользуется популярностью среди риелторов и частных продавцов. Предоставляет широкий выбор инструментов по работе с недвижимостью — предложения по ипотеке, классификация по регионам, типу жилья, виду сделок. Сайт имеет удобный интерфейс, интуитивно понятен.</p>
-
-      <img src="http://loremflickr.com/480/320" alt="">
-
-      <p>Чтобы подать объявление о продаже недвижимости, пользователь должен зарегистрироваться в системе и согласиться с условиями пользования сервисом. Взамен компания предлагает доступ к своим базам данных и дополнительным услугам, которые предусматривает выбранный тариф.</p>
-
-      <p>Система дает возможность как платного, так и бесплатного размещения. Для регионов Москва и Санкт-Петербург размещение только платное.</p>
-
-      <p>Будьте внимательны: компания оставляет за собой право изменять тарифы без согласования с клиентом, но публикуя изменения в интернете.</p>
+      <img class="alignleft" src="http://i35.tinypic.com/990wtx.png" alt="WordPress Logo" align="left" />Nulla sagittis convallis arcu. Sed sed nunc. Curabitur consequat. Quisque metus enim, venenatis fermentum, mollis in, porta et, nibh. Duis vulputate elit in elit. Mauris dictum libero id justo. Fusce in est. Sed nec diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque semper nibh eget nibh. Sed tempor. Fusce erat.
+      <h3>An Ordered List</h3>
+      <ol>
+        <li>Vestibulum in mauris semper tortor interdum ultrices.</li>
+        <li>Sed vel lorem et justo laoreet bibendum. Donec dictum.</li>
+        <li>Etiam massa libero, lacinia at, commodo in, tincidunt a, purus.</li>
+        <li>Praesent volutpat eros quis enim blandit tincidunt.</li>
+        <li>Aenean eu libero nec lectus ultricies laoreet. Donec rutrum, nisi vel egestas ultrices, ipsum urna sagittis libero, vitae vestibulum dui dolor vel velit.</li>
+      </ol>
     </div>
   </main>
   

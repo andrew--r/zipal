@@ -80,6 +80,12 @@
     p, blockquote, img, iframe
       margin 26px 0
     
+    ul, ol
+      padding-left 3rem
+    
+    h1, h2, h3, h4, h5, h6
+      margin .5em 0
+    
     blockquote
       border-top 1px solid #e5e5e5
       border-bottom 1px solid #e5e5e5
@@ -88,13 +94,17 @@
       font-weight bold
       
       font-size .8em
-      text-align center  
+      text-align center
+    
+    blockquote, h1, h2, h3, h4, h5, h6
+      clear both  
     
     img
       display block
       margin-left auto
       margin-right auto
       
-      padding .7rem
+      padding 0 1.5rem 1.5rem 1.5rem
       
-      border 1px solid #e5e5e5
+      &.alignright, &.alignleft
+        margin-top 0
